@@ -17,7 +17,8 @@ class HomeController : UIViewController, UITableViewDelegate, UITableViewDataSou
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        // Setting up for table view
         self.tableViewHome.registerNib(UINib(nibName: "HomeCell", bundle: nil), forCellReuseIdentifier: CELL_IDENTIFER)
         self.tableViewHome.dataSource = self
         self.tableViewHome.delegate = self
